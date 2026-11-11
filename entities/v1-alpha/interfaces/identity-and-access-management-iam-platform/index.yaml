@@ -1,0 +1,21 @@
+system_class: identity-and-access-management-iam-platform
+record_count: 18
+interface_ids:
+- dea:integration-interface-identity-and-access-management-iam-platform-identity-access-services-access-review-campaign
+- dea:integration-interface-identity-and-access-management-iam-platform-identity-access-services-api-token-management
+- dea:integration-interface-identity-and-access-management-iam-platform-identity-access-services-application-registration-consent
+- dea:integration-interface-identity-and-access-management-iam-platform-identity-access-services-b2b-guest-invitation
+- dea:integration-interface-identity-and-access-management-iam-platform-identity-access-services-conditional-access-policy
+- dea:integration-interface-identity-and-access-management-iam-platform-identity-access-services-credential-vault
+- dea:integration-interface-identity-and-access-management-iam-platform-identity-access-services-directory-synchronization
+- dea:integration-interface-identity-and-access-management-iam-platform-identity-access-services-entitlement-management
+- dea:integration-interface-identity-and-access-management-iam-platform-identity-access-services-identity-governance-reporting
+- dea:integration-interface-identity-and-access-management-iam-platform-identity-access-services-identity-proofing
+- dea:integration-interface-identity-and-access-management-iam-platform-identity-access-services-joiner-mover-leaver-workflow
+- dea:integration-interface-identity-and-access-management-iam-platform-identity-access-services-multi-factor-authentication
+- dea:integration-interface-identity-and-access-management-iam-platform-identity-access-services-privileged-access-management
+- dea:integration-interface-identity-and-access-management-iam-platform-identity-access-services-saml-sso-assertion
+- dea:integration-interface-identity-and-access-management-iam-platform-identity-access-services-session-management
+- dea:integration-interface-identity-api
+- dea:integration-interface-identity-broker-public
+- dea:integration-interface-identity-service
