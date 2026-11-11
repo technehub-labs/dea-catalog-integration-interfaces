@@ -1,0 +1,12 @@
+system_class: claims-management-system
+record_count: 9
+interface_ids:
+- dea:integration-interface-claims-management-system-claims-intake-adjudication-claim-adjudication-decision
+- dea:integration-interface-claims-management-system-claims-intake-adjudication-claim-assignment-routing
+- dea:integration-interface-claims-management-system-claims-intake-adjudication-claim-closure-coding
+- dea:integration-interface-claims-management-system-claims-intake-adjudication-claim-exposure-coverage-evaluation
+- dea:integration-interface-claims-management-system-claims-intake-adjudication-claim-fraud-detection
+- dea:integration-interface-claims-management-system-claims-intake-adjudication-claim-payment-issuance
+- dea:integration-interface-claims-management-system-claims-intake-adjudication-claim-reserve-estimation
+- dea:integration-interface-claims-management-system-claims-intake-adjudication-first-notice-of-loss-intake
+- dea:integration-interface-claims-management-system-claims-intake-adjudication-subrogation-recovery

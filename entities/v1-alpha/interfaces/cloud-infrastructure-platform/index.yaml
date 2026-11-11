@@ -1,0 +1,13 @@
+system_class: cloud-infrastructure-platform
+record_count: 10
+interface_ids:
+- dea:integration-interface-cloud-infrastructure-platform-compute-storage-networking-services-block-file-storage-provisioning
+- dea:integration-interface-cloud-infrastructure-platform-compute-storage-networking-services-compute-instance-provisioning
+- dea:integration-interface-cloud-infrastructure-platform-compute-storage-networking-services-load-balancing-traffic-routing
+- dea:integration-interface-cloud-infrastructure-platform-compute-storage-networking-services-managed-database-backup-restore
+- dea:integration-interface-cloud-infrastructure-platform-compute-storage-networking-services-managed-dns-resolution
+- dea:integration-interface-cloud-infrastructure-platform-compute-storage-networking-services-managed-message-queue
+- dea:integration-interface-cloud-infrastructure-platform-compute-storage-networking-services-monitoring-alarm-evaluation
+- dea:integration-interface-cloud-infrastructure-platform-compute-storage-networking-services-network-security-group-enforcement
+- dea:integration-interface-cloud-infrastructure-platform-compute-storage-networking-services-object-storage-lifecycle
+- dea:integration-interface-cloud-infrastructure-platform-compute-storage-networking-services-serverless-function-invocation

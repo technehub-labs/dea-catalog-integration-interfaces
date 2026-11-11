@@ -1,0 +1,13 @@
+system_class: cloud-data-warehouse
+record_count: 10
+interface_ids:
+- dea:integration-interface-cloud-data-warehouse-cloud-data-warehouse-bulk-data-loading
+- dea:integration-interface-cloud-data-warehouse-cloud-data-warehouse-data-share-publication
+- dea:integration-interface-cloud-data-warehouse-cloud-data-warehouse-elastic-query-execution
+- dea:integration-interface-cloud-data-warehouse-cloud-data-warehouse-query-result-cache
+- dea:integration-interface-cloud-data-warehouse-cloud-data-warehouse-role-based-access-grant
+- dea:integration-interface-cloud-data-warehouse-cloud-data-warehouse-secure-view-masking-policy
+- dea:integration-interface-cloud-data-warehouse-cloud-data-warehouse-table-maintenance
+- dea:integration-interface-cloud-data-warehouse-cloud-data-warehouse-task-stream-pipeline-scheduling
+- dea:integration-interface-cloud-data-warehouse-cloud-data-warehouse-time-travel-restore
+- dea:integration-interface-cloud-data-warehouse-cloud-data-warehouse-warehouse-usage-metering
