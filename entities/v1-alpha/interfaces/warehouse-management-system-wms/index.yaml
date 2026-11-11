@@ -1,0 +1,17 @@
+system_class: warehouse-management-system-wms
+record_count: 14
+interface_ids:
+- dea:integration-interface-warehouse-management-system-wms-warehouse-operations-cross-dock
+- dea:integration-interface-warehouse-management-system-wms-warehouse-operations-cycle-counting
+- dea:integration-interface-warehouse-management-system-wms-warehouse-operations-dock-scheduling
+- dea:integration-interface-warehouse-management-system-wms-warehouse-operations-inbound-receiving
+- dea:integration-interface-warehouse-management-system-wms-warehouse-operations-labor-standards
+- dea:integration-interface-warehouse-management-system-wms-warehouse-operations-outbound-manifest
+- dea:integration-interface-warehouse-management-system-wms-warehouse-operations-pack-cartonization
+- dea:integration-interface-warehouse-management-system-wms-warehouse-operations-pick-task-generation
+- dea:integration-interface-warehouse-management-system-wms-warehouse-operations-putaway
+- dea:integration-interface-warehouse-management-system-wms-warehouse-operations-replenishment
+- dea:integration-interface-warehouse-management-system-wms-warehouse-operations-returns-authorization
+- dea:integration-interface-warehouse-management-system-wms-warehouse-operations-slotting-optimization
+- dea:integration-interface-warehouse-management-system-wms-warehouse-operations-wave-planning
+- dea:integration-interface-warehouse-management-system-wms-warehouse-operations-yard-management
