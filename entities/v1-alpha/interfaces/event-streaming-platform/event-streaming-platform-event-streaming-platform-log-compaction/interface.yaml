@@ -1,0 +1,47 @@
+id: dea:integration-interface-event-streaming-platform-event-streaming-platform-log-compaction
+type: IntegrationInterface
+name: Log Compaction Interface
+description: 'Vendor-neutral integration interface record operationalising the Log Compaction Service
+  contract of the event streaming platform generic system class (data analytics sector). The interface
+  specifies the means and shape of the exchange (batch); the contract itself is owned by the ISS catalogue
+  record (see service_binding), and the API contract that may specify this boundary is a separate entity
+  (dea:API) per the CR-021 D-4 disposition. The substitutability test passes: materially different vendor
+  implementations can operationalise the same boundary. Vendor corroboration is evidence only; at least
+  3 distinct vendor systems are cited and no vendor product is canonical (per G-12).'
+version: 1.0.0
+lifecycle_status: active
+interface_kind: file-transfer
+consumer_class: internal-machine
+interaction_pattern: batch
+external_references:
+- system: Apache Kafka
+  identifier: KF-ESP-004
+- system: Confluent Platform
+  identifier: CNF-ESP-004
+- system: Amazon MSK
+  identifier: AWS-ESP-004
+tags:
+- interface-kind:file-transfer
+- consumer-class:internal-machine
+- interaction-pattern:batch
+- sector:data-analytics
+- system-class:event-streaming-platform
+service_binding:
+  service_id: dea:information-system-service-event-streaming-platform-event-streaming-platform-log-compaction
+  binding_status: bound
+governance:
+  functional_owner: IS Semantic Architecture programme
+  steward: IS Semantic Architecture programme
+  approval_status: proposed
+  review_date: '2027-11-10'
+  source_and_evidence: 'Metamodel clause: dea-metamodel schemas/entities/integration-interface.json
+    (IntegrationInterface, L5-integration, CR-021 D-4). Admitting CR: CR-IS-CAT-04B (population, deterministic
+    per G-10). Vendor evidence (3 distinct vendor systems, evidence only per G-12): Apache Kafka (identifier
+    KF-ESP-004); Confluent Platform (identifier CNF-ESP-004); Amazon MSK (identifier AWS-ESP-004).'
+metadata:
+  cr: CR-IS-CAT-04B
+  created_by: Emmanuel A. Otchere
+  created_date: '2026-11-11'
+  notes: 'Derived from the CR-IS-CAT-03D ISS population (623 records) by deterministic interface derivation
+    (G-10): one interface per service exposure. The five legacy anchors referenced by the ISF and ISC
+    registries are admitted alongside.'
