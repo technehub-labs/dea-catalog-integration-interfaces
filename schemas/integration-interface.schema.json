@@ -1,0 +1,130 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://technehub-labs.github.io/dea-catalog-integration-interfaces/schemas/integration-interface.schema.json",
+  "metamodel_source": "https://github.com/technehub-labs/dea-metamodel/blob/main/schemas/entities/integration-interface.json",
+  "metamodel_version": "1.0.0",
+  "title": "IntegrationInterface (catalogue instance schema)",
+  "description": "Catalogue-instance projection of the metamodel IntegrationInterface entity. The normative field set is defined by the metamodel schema; this file mirrors it and adds only the catalogue-instance layer (classification axes promoted to first-class fields by CR-IS-CAT-04B, service or component bindings, governance, provenance). Do not widen a normative enum here to accept a value the metamodel does not define: fix the record instead. A catalogue that diverges from the metamodel is a second source of truth.",
+  "type": "object",
+  "required": ["id", "type", "name", "version", "lifecycle_status"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^dea:integration-interface-[a-z0-9-]+$",
+      "description": "OpenDEAM-local identifier. The metamodel pattern is the general ^[a-z][a-z0-9-]*:[a-z0-9-]+$; this catalogue narrows it to the IF entity namespace so a record cannot be filed under another entity's identifier form."
+    },
+    "type": {
+      "type": "string",
+      "const": "IntegrationInterface"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "description": {
+      "type": "string",
+      "maxLength": 2000
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "lifecycle_status": {
+      "type": "string",
+      "enum": ["proposed", "planned", "active", "deprecated", "retired"],
+      "description": "CR-3R: lifecycle state from the metamodel lifecycle vocabulary."
+    },
+    "interface_kind": {
+      "type": "string",
+      "enum": ["rest-api", "message-topic", "event-stream", "file-transfer", "rpc", "database-access", "mixed", "other"],
+      "description": "Classification axis 1 (CR-IS-CAT-04B): what kind of boundary the interface is. Derived deterministically from the bound service's interaction pattern at population time. Promoted from the interface-kind tag to a first-class field; the tag remains as a mirror; the taxonomy gate asserts the two agree."
+    },
+    "consumer_class": {
+      "type": "string",
+      "enum": ["internal-application", "internal-analyst", "internal-machine", "external-partner", "external-customer", "mixed"],
+      "description": "Classification axis 2 (CR-IS-CAT-04B): who the boundary serves. Inherited from the bound service or component. Promoted from the consumer-class tag; the taxonomy gate asserts tag and field agree."
+    },
+    "interaction_pattern": {
+      "type": "string",
+      "enum": ["request-response", "event-push", "event-subscribe", "streaming", "batch", "mixed"],
+      "description": "Classification axis 3 (CR-IS-CAT-04B): how the exchange is shaped. Inherited from the bound service or component. Promoted from the interaction-pattern tag; the taxonomy gate asserts tag and field agree."
+    },
+    "external_references": {
+      "type": "array",
+      "description": "Identifiers in external systems. Never a substitute for the OpenDEAM id (E004). Vendor systems appear here as corroboration evidence only (G-12); at least 3 distinct vendor systems are cited per record.",
+      "items": {
+        "type": "object",
+        "required": ["system", "identifier"],
+        "properties": {
+          "system": { "type": "string" },
+          "identifier": { "type": "string" }
+        }
+      }
+    },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "service_binding": {
+      "type": "object",
+      "description": "Catalogue-instance layer. The ISS service contract this interface operationalises. Exactly one of service_binding and component_binding is present on a record.",
+      "required": ["service_id", "binding_status"],
+      "properties": {
+        "service_id": {
+          "type": "string",
+          "pattern": "^dea:information-system-service-[a-z0-9-]+$",
+          "description": "Resolves against the vendored ISS snapshot (D4)."
+        },
+        "binding_status": {
+          "type": "string",
+          "enum": ["bound", "planned", "deprecated"]
+        }
+      }
+    },
+    "component_binding": {
+      "type": "object",
+      "description": "Catalogue-instance layer. The ISC component that exposes this boundary directly, used when the exposure belongs to a component rather than to a single service contract. Exactly one of service_binding and component_binding is present on a record.",
+      "required": ["component_id", "binding_status"],
+      "properties": {
+        "component_id": {
+          "type": "string",
+          "pattern": "^dea:information-system-component-[a-z0-9-]+$",
+          "description": "Resolves against the vendored ISC snapshot (D4)."
+        },
+        "binding_status": {
+          "type": "string",
+          "enum": ["bound", "planned", "deprecated"]
+        }
+      }
+    },
+    "governance": {
+      "type": "object",
+      "description": "Catalogue-instance layer. Ownership and review state.",
+      "required": ["functional_owner", "steward", "approval_status"],
+      "properties": {
+        "functional_owner": { "type": "string" },
+        "steward": { "type": "string" },
+        "approval_status": {
+          "type": "string",
+          "enum": ["proposed", "under_review", "approved"]
+        },
+        "review_date": { "type": "string" },
+        "source_and_evidence": { "type": "string" }
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "description": "Provenance for the record.",
+      "required": ["cr", "created_by", "created_date"],
+      "properties": {
+        "cr": { "type": "string" },
+        "created_by": { "type": "string" },
+        "created_date": { "type": "string" },
+        "last_modified": { "type": "string" },
+        "notes": { "type": "string" }
+      }
+    }
+  }
+}

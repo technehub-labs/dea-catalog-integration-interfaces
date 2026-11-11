@@ -1,0 +1,74 @@
+# Metamodel Pointer :  Integration Interface
+# CR-IS-CAT-04A (IF catalogue foundation). The repository carries its current
+# name dea-catalog-integration-interfaces while the OpenDEAM allocation names
+# dea-catalog-information-system-integration-interfaces; the rename is recorded
+# below as pending. See docs/FOUNDATIONS.md section 5 for the cross-entity
+# repository reality reconciliation covering the four IS-family catalogues.
+#
+# Auto-generated from OpenDEAM v0.7.0 (dea-architecture-framework, CR-AR-FMWK-04).
+# Do not edit manually :  allocation changes go through the root model
+# (structural: ADR + minor bump; additive: PR + patch bump).
+metamodel:
+  version: v0.7.0
+  entity_id: dea:entity-integration-interface
+  class_alias: IFI
+  layer: L5
+  building_block: L5-integration
+  status: normative
+  supersedes: null
+  viewer_url: "https://technehub-labs.github.io/metamodel/?entity=IFI"
+  specialization:
+    core_anchor: null
+    template: "direct entity (no kernel+specialization; introduced by CR-021)"
+    note: >-
+      dea:IntegrationInterface is introduced directly by dea-metamodel CR-021
+      with the D-4 disposition: the interface is the interaction boundary,
+      distinct from dea:API which specifies it via the new dea:specifies
+      relationship. There is no Core kernel it specialises; Cited template
+      precedents are recorded in the metamodel definition, not here.
+
+catalog:
+  name: Integration Interface
+  repo: technehub-labs/dea-catalog-integration-interfaces
+  legacy_repo: null
+  status: scaffold
+  rename:
+    target: technehub-labs/dea-catalog-information-system-integration-interfaces
+    cr: CR-IS-CAT-04A
+    status: pending
+    note: >-
+      The OpenDEAM allocation names
+      dea-catalog-information-system-integration-interfaces; the repository
+      currently carries dea-catalog-integration-interfaces. Reference
+      resolution is by identifier, not by repository name, so the rename debt
+      does not block any cross-catalogue reference. Recorded in
+      docs/FOUNDATIONS.md section 5.
+
+description: |
+  A defined interaction boundary between an information system (or one of its
+  components) and one or more internal or external consumers or providers,
+  specifying the means, protocols, interaction patterns and contractual
+  constraints through which information or functionality is exchanged. The
+  interaction boundary is distinct from the API contract (dea:API) that may
+  specify it.
+
+relationships:
+  vocabulary:
+    - dea:exposes
+    - dea:uses
+    - dea:specifies
+    - dea:exchanges
+  note: >-
+    The canonical relationship vocabulary. Relationship connections are expressed
+    through the registry rather than as inline state on the entity, per metamodel
+    CR-3. Services and components expose interfaces (dea:exposes); an API contract
+    specifies an interface (dea:specifies, CR-021 D-4).
+
+evidence:
+  metamodel_entity: dea-metamodel/schemas/entities/integration-interface.json
+  metamodel_cr: dea-metamodel/change-requests/CR-021-integration-interface.md
+  framework_cr: dea-architecture-framework CR-AR-FMWK-04
+  programme_cr: dea-metamodel CR-017 (Information Systems Domain Semantic Integration)
+  identifier_map: >-
+    dea:entity-integration-interface -> dea:IntegrationInterface,
+    class alias IFI, disposition D-4 (interface distinct from dea:API).
