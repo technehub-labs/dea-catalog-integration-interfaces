@@ -1,0 +1,4 @@
+system_class: employee-portal-platform
+record_count: 1
+interface_ids:
+- dea:integration-interface-employee-portal-internal
