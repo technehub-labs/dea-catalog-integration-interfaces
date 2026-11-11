@@ -1,0 +1,13 @@
+system_class: continuous-integration-continuous-delivery-ci-cd-platform
+record_count: 10
+interface_ids:
+- dea:integration-interface-continuous-integration-continuous-delivery-ci-cd-platform-ci-cd-workflows-build-secrets-management
+- dea:integration-interface-continuous-integration-continuous-delivery-ci-cd-platform-ci-cd-workflows-deployment-automation
+- dea:integration-interface-continuous-integration-continuous-delivery-ci-cd-platform-ci-cd-workflows-environment-approval-gate
+- dea:integration-interface-continuous-integration-continuous-delivery-ci-cd-platform-ci-cd-workflows-failed-workflow-diagnostics
+- dea:integration-interface-continuous-integration-continuous-delivery-ci-cd-platform-ci-cd-workflows-job-token-issuance
+- dea:integration-interface-continuous-integration-continuous-delivery-ci-cd-platform-ci-cd-workflows-matrix-build-execution
+- dea:integration-interface-continuous-integration-continuous-delivery-ci-cd-platform-ci-cd-workflows-repository-checkout-cache
+- dea:integration-interface-continuous-integration-continuous-delivery-ci-cd-platform-ci-cd-workflows-self-hosted-runner-registration
+- dea:integration-interface-continuous-integration-continuous-delivery-ci-cd-platform-ci-cd-workflows-workflow-artifact
+- dea:integration-interface-continuous-integration-continuous-delivery-ci-cd-platform-ci-cd-workflows-workflow-trigger

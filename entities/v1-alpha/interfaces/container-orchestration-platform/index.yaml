@@ -1,0 +1,15 @@
+system_class: container-orchestration-platform
+record_count: 12
+interface_ids:
+- dea:integration-interface-container-orchestration-platform-cluster-control-plane-workloads-admission-control
+- dea:integration-interface-container-orchestration-platform-cluster-control-plane-workloads-cluster-autoscaling
+- dea:integration-interface-container-orchestration-platform-cluster-control-plane-workloads-cluster-state-persistence
+- dea:integration-interface-container-orchestration-platform-cluster-control-plane-workloads-configuration-secret-injection
+- dea:integration-interface-container-orchestration-platform-cluster-control-plane-workloads-container-image-registry
+- dea:integration-interface-container-orchestration-platform-cluster-control-plane-workloads-controller-high-availability
+- dea:integration-interface-container-orchestration-platform-cluster-control-plane-workloads-ingress-gateway
+- dea:integration-interface-container-orchestration-platform-cluster-control-plane-workloads-network-policy-enforcement
+- dea:integration-interface-container-orchestration-platform-cluster-control-plane-workloads-persistent-volume-binding
+- dea:integration-interface-container-orchestration-platform-cluster-control-plane-workloads-rolling-deployment
+- dea:integration-interface-container-orchestration-platform-cluster-control-plane-workloads-service-discovery-routing
+- dea:integration-interface-container-orchestration-platform-cluster-control-plane-workloads-workload-scheduling
