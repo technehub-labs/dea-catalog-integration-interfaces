@@ -31,7 +31,7 @@ catalog:
   name: Integration Interface
   repo: technehub-labs/dea-catalog-integration-interfaces
   legacy_repo: null
-  status: scaffold
+  status: populated
   rename:
     target: technehub-labs/dea-catalog-information-system-integration-interfaces
     cr: CR-IS-CAT-04A
