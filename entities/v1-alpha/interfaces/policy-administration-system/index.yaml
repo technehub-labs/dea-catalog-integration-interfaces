@@ -1,0 +1,13 @@
+system_class: policy-administration-system
+record_count: 10
+interface_ids:
+- dea:integration-interface-policy-administration-system-policy-origination-administration-commission-calculation
+- dea:integration-interface-policy-administration-system-policy-origination-administration-endorsement
+- dea:integration-interface-policy-administration-system-policy-origination-administration-insured-party-validation
+- dea:integration-interface-policy-administration-system-policy-origination-administration-policy-document-generation
+- dea:integration-interface-policy-administration-system-policy-origination-administration-policy-issuance
+- dea:integration-interface-policy-administration-system-policy-origination-administration-policyholder-self-service
+- dea:integration-interface-policy-administration-system-policy-origination-administration-product-pricing-rules
+- dea:integration-interface-policy-administration-system-policy-origination-administration-quote-intake-rating
+- dea:integration-interface-policy-administration-system-policy-origination-administration-renewal
+- dea:integration-interface-policy-administration-system-policy-origination-administration-underwriting-workflow

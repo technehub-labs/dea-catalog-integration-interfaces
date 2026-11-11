@@ -1,0 +1,48 @@
+id: dea:integration-interface-mobile-core-network-epc-5gc-mobility-session-management-detach-management
+type: IntegrationInterface
+name: Detach Management Interface
+description: 'Vendor-neutral integration interface record operationalising the Detach Management Service
+  contract of the mobile core network epc 5gc generic system class (telecommunications sector). The
+  interface specifies the means and shape of the exchange (request-response); the contract itself is
+  owned by the ISS catalogue record (see service_binding), and the API contract that may specify this
+  boundary is a separate entity (dea:API) per the CR-021 D-4 disposition. The substitutability test
+  passes: materially different vendor implementations can operationalise the same boundary. Vendor corroboration
+  is evidence only; at least 3 distinct vendor systems are cited and no vendor product is canonical
+  (per G-12).'
+version: 1.0.0
+lifecycle_status: active
+interface_kind: rest-api
+consumer_class: internal-machine
+interaction_pattern: request-response
+external_references:
+- system: Nokia 5G Core (Core Network)
+  identifier: NKC-MS-005
+- system: Ericsson
+  identifier: ERI-MS-005
+- system: ZTE
+  identifier: ZTE-MS-005
+tags:
+- interface-kind:rest-api
+- consumer-class:internal-machine
+- interaction-pattern:request-response
+- sector:telecommunications
+- system-class:mobile-core-network-epc-5gc
+service_binding:
+  service_id: dea:information-system-service-mobile-core-network-epc-5gc-mobility-session-management-detach-management
+  binding_status: bound
+governance:
+  functional_owner: IS Semantic Architecture programme
+  steward: IS Semantic Architecture programme
+  approval_status: proposed
+  review_date: '2027-11-10'
+  source_and_evidence: 'Metamodel clause: dea-metamodel schemas/entities/integration-interface.json
+    (IntegrationInterface, L5-integration, CR-021 D-4). Admitting CR: CR-IS-CAT-04B (population, deterministic
+    per G-10). Vendor evidence (3 distinct vendor systems, evidence only per G-12): Nokia 5G Core (Core
+    Network) (identifier NKC-MS-005); Ericsson (identifier ERI-MS-005); ZTE (identifier ZTE-MS-005).'
+metadata:
+  cr: CR-IS-CAT-04B
+  created_by: Emmanuel A. Otchere
+  created_date: '2026-11-11'
+  notes: 'Derived from the CR-IS-CAT-03D ISS population (623 records) by deterministic interface derivation
+    (G-10): one interface per service exposure. The five legacy anchors referenced by the ISF and ISC
+    registries are admitted alongside.'
