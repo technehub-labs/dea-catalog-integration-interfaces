@@ -1,0 +1,13 @@
+system_class: transportation-management-system-tms
+record_count: 10
+interface_ids:
+- dea:integration-interface-transportation-management-system-tms-transportation-freight-carrier-master-rate
+- dea:integration-interface-transportation-management-system-tms-transportation-freight-carrier-performance
+- dea:integration-interface-transportation-management-system-tms-transportation-freight-dangerous-goods-compliance
+- dea:integration-interface-transportation-management-system-tms-transportation-freight-delivery-appointment
+- dea:integration-interface-transportation-management-system-tms-transportation-freight-freight-charge-calculation
+- dea:integration-interface-transportation-management-system-tms-transportation-freight-freight-order
+- dea:integration-interface-transportation-management-system-tms-transportation-freight-freight-settlement
+- dea:integration-interface-transportation-management-system-tms-transportation-freight-load-tender
+- dea:integration-interface-transportation-management-system-tms-transportation-freight-shipment-tracking
+- dea:integration-interface-transportation-management-system-tms-transportation-freight-transport-optimization

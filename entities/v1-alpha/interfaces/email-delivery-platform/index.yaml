@@ -1,0 +1,10 @@
+system_class: email-delivery-platform
+record_count: 7
+interface_ids:
+- dea:integration-interface-email-delivery-platform-email-delivery-email-template-personalization
+- dea:integration-interface-email-delivery-platform-email-delivery-engagement-tracking
+- dea:integration-interface-email-delivery-platform-email-delivery-inbound-email-parsing
+- dea:integration-interface-email-delivery-platform-email-delivery-sender-reputation-deliverability
+- dea:integration-interface-email-delivery-platform-email-delivery-suppression-unsubscribe
+- dea:integration-interface-email-delivery-platform-email-delivery-transactional-email
+- dea:integration-interface-email-delivery-platform-email-delivery-webhook-event

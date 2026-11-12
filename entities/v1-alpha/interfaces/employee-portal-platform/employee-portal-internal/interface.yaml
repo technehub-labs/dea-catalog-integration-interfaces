@@ -1,0 +1,45 @@
+id: dea:integration-interface-employee-portal-internal
+type: IntegrationInterface
+name: Employee Portal Internal Interface
+description: 'Vendor-neutral internal employee integration interface: the interaction boundary through
+  which the Employee Portal component of the enterprise applications class exchanges workforce self-service
+  interactions (profile, leave, payslip and request workflows) with internal applications. The interface
+  is exposed by a component rather than bound to a single service contract (see component_binding).
+  Resolves the ISC registry forward reference isc-rel-102. Vendor corroboration is evidence only; at
+  least 3 distinct vendor systems are cited and no vendor product is canonical (per G-12).'
+version: 1.0.0
+lifecycle_status: active
+interface_kind: rest-api
+consumer_class: internal-application
+interaction_pattern: request-response
+external_references:
+- system: SAP
+  identifier: SuccessFactors
+- system: Workday
+  identifier: Workday HCM
+- system: ServiceNow
+  identifier: Employee Service Center
+tags:
+- interface-kind:rest-api
+- consumer-class:internal-application
+- interaction-pattern:request-response
+- sector:enterprise-applications
+- system-class:employee-portal-platform
+component_binding:
+  component_id: dea:information-system-component-employee-portal-platform
+  binding_status: bound
+governance:
+  functional_owner: IS Semantic Architecture programme
+  steward: IS Semantic Architecture programme
+  approval_status: proposed
+  review_date: '2027-11-10'
+  source_and_evidence: 'Metamodel clause: dea-metamodel schemas/entities/integration-interface.json
+    (IntegrationInterface, L5-integration, CR-021 D-4). Admitting CR: CR-IS-CAT-04B (population; legacy
+    anchor admission). Vendor evidence (3 distinct vendor systems, evidence only per G-12): SAP (identifier
+    SuccessFactors); Workday (identifier Workday HCM); ServiceNow (identifier Employee Service Center).'
+metadata:
+  cr: CR-IS-CAT-04B
+  created_by: Emmanuel A. Otchere
+  created_date: '2026-11-11'
+  notes: Legacy anchor interface referenced by the ISC registry (isc-rel-102, CR-IS-CAT-02D); one of
+    the five anchors of the CR-IS-CAT-04B population.

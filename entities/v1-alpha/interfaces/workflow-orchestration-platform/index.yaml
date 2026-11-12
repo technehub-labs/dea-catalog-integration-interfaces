@@ -1,0 +1,13 @@
+system_class: workflow-orchestration-platform
+record_count: 10
+interface_ids:
+- dea:integration-interface-workflow-orchestration-platform-workflow-orchestration-alerting
+- dea:integration-interface-workflow-orchestration-platform-workflow-orchestration-backfill
+- dea:integration-interface-workflow-orchestration-platform-workflow-orchestration-concurrency-throttling
+- dea:integration-interface-workflow-orchestration-platform-workflow-orchestration-configuration-as-code
+- dea:integration-interface-workflow-orchestration-platform-workflow-orchestration-dag-scheduling
+- dea:integration-interface-workflow-orchestration-platform-workflow-orchestration-dataset-lineage
+- dea:integration-interface-workflow-orchestration-platform-workflow-orchestration-task-execution
+- dea:integration-interface-workflow-orchestration-platform-workflow-orchestration-task-retry-sla
+- dea:integration-interface-workflow-orchestration-platform-workflow-orchestration-workflow-api
+- dea:integration-interface-workflow-orchestration-platform-workflow-orchestration-workflow-monitoring

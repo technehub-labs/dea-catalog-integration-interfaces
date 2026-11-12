@@ -1,0 +1,46 @@
+id: dea:integration-interface-agent-orchestrator-internal
+type: IntegrationInterface
+name: Agent Orchestrator Internal Interface
+description: 'Vendor-neutral internal agentic execution integration interface: the interaction boundary
+  through which the Agent Orchestrator component exchanges agent invocation, tool-call and execution-state
+  traffic with internal machine consumers. The interface is exposed by a component rather than bound
+  to a single service contract (see component_binding). Resolves the ISC registry forward reference
+  isc-rel-203. Vendor corroboration is evidence only; at least 3 distinct vendor systems are cited and
+  no vendor product is canonical (per G-12).'
+version: 1.0.0
+lifecycle_status: active
+interface_kind: rpc
+consumer_class: internal-machine
+interaction_pattern: request-response
+external_references:
+- system: Amazon Web Services
+  identifier: Bedrock Agents
+- system: Google Cloud
+  identifier: Vertex AI Agent Engine
+- system: Microsoft Azure
+  identifier: AI Foundry Agent Service
+tags:
+- interface-kind:rpc
+- consumer-class:internal-machine
+- interaction-pattern:request-response
+- sector:technology-infrastructure-devops
+- system-class:agent-orchestration-platform
+component_binding:
+  component_id: dea:information-system-component-agent-orchestrator
+  binding_status: bound
+governance:
+  functional_owner: IS Semantic Architecture programme
+  steward: IS Semantic Architecture programme
+  approval_status: proposed
+  review_date: '2027-11-10'
+  source_and_evidence: 'Metamodel clause: dea-metamodel schemas/entities/integration-interface.json
+    (IntegrationInterface, L5-integration, CR-021 D-4). Admitting CR: CR-IS-CAT-04B (population; legacy
+    anchor admission). Vendor evidence (3 distinct vendor systems, evidence only per G-12): Amazon Web
+    Services (identifier Bedrock Agents); Google Cloud (identifier Vertex AI Agent Engine); Microsoft
+    Azure (identifier AI Foundry Agent Service).'
+metadata:
+  cr: CR-IS-CAT-04B
+  created_by: Emmanuel A. Otchere
+  created_date: '2026-11-11'
+  notes: Legacy anchor interface referenced by the ISC registry (isc-rel-203, CR-IS-CAT-02D); one of
+    the five anchors of the CR-IS-CAT-04B population.

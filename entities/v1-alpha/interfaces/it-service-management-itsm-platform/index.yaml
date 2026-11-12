@@ -1,0 +1,18 @@
+system_class: it-service-management-itsm-platform
+record_count: 15
+interface_ids:
+- dea:integration-interface-it-service-management-itsm-platform-it-service-management-asset-lifecycle
+- dea:integration-interface-it-service-management-itsm-platform-it-service-management-change-advisory
+- dea:integration-interface-it-service-management-itsm-platform-it-service-management-cmdb-discovery
+- dea:integration-interface-it-service-management-itsm-platform-it-service-management-event-correlation
+- dea:integration-interface-it-service-management-itsm-platform-it-service-management-incident-management
+- dea:integration-interface-it-service-management-itsm-platform-it-service-management-incident-sla
+- dea:integration-interface-it-service-management-itsm-platform-it-service-management-knowledge-suggestion
+- dea:integration-interface-it-service-management-itsm-platform-it-service-management-performance-analytics-kpi
+- dea:integration-interface-it-service-management-itsm-platform-it-service-management-problem-management
+- dea:integration-interface-it-service-management-itsm-platform-it-service-management-security-incident-response
+- dea:integration-interface-it-service-management-itsm-platform-it-service-management-service-catalog-request
+- dea:integration-interface-it-service-management-itsm-platform-it-service-management-service-desk-intake
+- dea:integration-interface-it-service-management-itsm-platform-it-service-management-sla-reporting
+- dea:integration-interface-it-service-management-itsm-platform-it-service-management-survey-feedback
+- dea:integration-interface-it-service-management-itsm-platform-it-service-management-virtual-agent

@@ -1,0 +1,13 @@
+system_class: customer-service-ticketing-platform
+record_count: 10
+interface_ids:
+- dea:integration-interface-customer-service-ticketing-platform-customer-service-management-agent-workspace
+- dea:integration-interface-customer-service-ticketing-platform-customer-service-management-csat-survey
+- dea:integration-interface-customer-service-ticketing-platform-customer-service-management-knowledge-base
+- dea:integration-interface-customer-service-ticketing-platform-customer-service-management-macro-application
+- dea:integration-interface-customer-service-ticketing-platform-customer-service-management-organization-membership
+- dea:integration-interface-customer-service-ticketing-platform-customer-service-management-sla-policy-enforcement
+- dea:integration-interface-customer-service-ticketing-platform-customer-service-management-ticket-intake-routing
+- dea:integration-interface-customer-service-ticketing-platform-customer-service-management-ticket-search-views
+- dea:integration-interface-customer-service-ticketing-platform-customer-service-management-ticket-trigger-automation
+- dea:integration-interface-customer-service-ticketing-platform-customer-service-management-webhook-event

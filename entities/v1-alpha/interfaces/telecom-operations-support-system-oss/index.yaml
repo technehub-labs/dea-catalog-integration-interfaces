@@ -1,0 +1,26 @@
+system_class: telecom-operations-support-system-oss
+record_count: 23
+interface_ids:
+- dea:integration-interface-telecom-operations-support-system-oss-fault-management-service-assurance-alarm-collection
+- dea:integration-interface-telecom-operations-support-system-oss-fault-management-service-assurance-alarm-correlation
+- dea:integration-interface-telecom-operations-support-system-oss-fault-management-service-assurance-customer-impact-notification
+- dea:integration-interface-telecom-operations-support-system-oss-fault-management-service-assurance-field-dispatch
+- dea:integration-interface-telecom-operations-support-system-oss-fault-management-service-assurance-sla-assurance
+- dea:integration-interface-telecom-operations-support-system-oss-fault-management-service-assurance-trouble-ticketing
+- dea:integration-interface-telecom-operations-support-system-oss-network-inventory-topology-capacity-reporting
+- dea:integration-interface-telecom-operations-support-system-oss-network-inventory-topology-impact-analysis
+- dea:integration-interface-telecom-operations-support-system-oss-network-inventory-topology-inventory-synchronization
+- dea:integration-interface-telecom-operations-support-system-oss-network-inventory-topology-resource-inventory
+- dea:integration-interface-telecom-operations-support-system-oss-network-inventory-topology-resource-lifecycle
+- dea:integration-interface-telecom-operations-support-system-oss-network-inventory-topology-topology-discovery-modeling
+- dea:integration-interface-telecom-operations-support-system-oss-performance-management-network-quality-analytics
+- dea:integration-interface-telecom-operations-support-system-oss-performance-management-performance-aggregation-reporting
+- dea:integration-interface-telecom-operations-support-system-oss-performance-management-performance-counter-collection
+- dea:integration-interface-telecom-operations-support-system-oss-performance-management-service-kpi-dashboard
+- dea:integration-interface-telecom-operations-support-system-oss-performance-management-threshold-breach-detection
+- dea:integration-interface-telecom-operations-support-system-oss-service-provisioning-activation-activation-audit
+- dea:integration-interface-telecom-operations-support-system-oss-service-provisioning-activation-bulk-provisioning
+- dea:integration-interface-telecom-operations-support-system-oss-service-provisioning-activation-network-element-configuration
+- dea:integration-interface-telecom-operations-support-system-oss-service-provisioning-activation-provisioning-rollback
+- dea:integration-interface-telecom-operations-support-system-oss-service-provisioning-activation-provisioning-validation
+- dea:integration-interface-telecom-operations-support-system-oss-service-provisioning-activation-service-activation

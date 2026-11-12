@@ -8,14 +8,19 @@
 
 ## Status
 
-**Scaffold.** Established by `CR-IS-CAT-04A` (IF foundation) on 2026-11-11. No records are admitted yet; population is `CR-IS-CAT-04B`.
+**Populated.** Established by `CR-IS-CAT-04A` (IF foundation) on 2026-11-11; populated by `CR-IS-CAT-04B` on 2026-11-11.
+
+This repository contains **627 admitted records** and the eight-gate CI that holds them to the method. Nothing in a record asserts that a vendor product exists as a canonical entity; vendor systems corroborate the boundary as evidence only.
 
 | Item | State |
 |---|---|
-| Repository | scaffold, 0 records |
-| Metamodel pointer | pinned to OpenDEAM v0.7.0; catalog status `scaffold` |
-| Schema projection | landed; three classification axes as first-class fields, bindings and governance in the catalogue-instance layer |
-| Population | `CR-IS-CAT-04B` (planned) |
+| Repository | populated, 627 records, 37 system classes |
+| Metamodel pointer | pinned to OpenDEAM v0.7.0; catalog status `populated` |
+| Schema projection | landed; three classification axes promoted to first-class fields (`CR-IS-CAT-04B`) |
+| Taxonomy | ratified ([TAXONOMY.md](./docs/TAXONOMY.md)) |
+| Record documentation standard | established ([RECORD-STANDARD.md](./docs/RECORD-STANDARD.md)) |
+| Population | 627 records admitted (`CR-IS-CAT-04B`) |
+| Cross-catalogue integration | registry landed; 627 `dea:exposes` edges; every ISS exposure resolved (`CR-IS-CAT-04B`) |
 
 ## What this catalogue is
 
@@ -70,10 +75,10 @@ Relationship connections are expressed through the relationship registry (`relat
 |---|---|---|---|
 | ISS | `dea:InformationSystemService` | `dea-catalog-information-system-services` | populated, 623 records |
 | ISC | `dea:InformationSystemComponent` | `dea-catalog-application-components` | populated, 276 records |
-| IF | `dea:IntegrationInterface` | `dea-catalog-integration-interfaces` | **scaffold (this repository)** |
+| IF | `dea:IntegrationInterface` | `dea-catalog-integration-interfaces` | **populated, 627 records (this repository)** |
 | API | `dea:API` | API catalogue | pending |
 
-The ISS population forward-declares 623 exposures to this catalogue under `CR-IS-CAT-04B`; the ISF registry forward-declares `dea:integration-interface-identity-api`; the ISC registry forward-declares four component exposures (`isc-rel-007`, `isc-rel-014`, `isc-rel-102`, `isc-rel-203`). All resolve when `CR-IS-CAT-04B` admits the records. See section 5 of [FOUNDATIONS.md](./docs/FOUNDATIONS.md) for the repository reality reconciliation.
+The 623 exposures the ISS population forward-declared under `CR-IS-CAT-04B` are **resolved**: every one has an IF record binding back to the service that declared it. The ISF registry's `dea:integration-interface-identity-api` and the four ISC registry component exposures (`isc-rel-007`, `isc-rel-014`, `isc-rel-102`, `isc-rel-203`) are admitted as the five legacy anchors of the population. See section 5 of [FOUNDATIONS.md](./docs/FOUNDATIONS.md) for the repository reality reconciliation.
 
 ## Repository structure
 

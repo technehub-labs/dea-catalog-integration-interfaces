@@ -1,0 +1,15 @@
+system_class: iot-device-management-platform
+record_count: 12
+interface_ids:
+- dea:integration-interface-iot-device-management-platform-device-connectivity-device-certificate-lifecycle
+- dea:integration-interface-iot-device-management-platform-device-connectivity-device-fleet-index-search
+- dea:integration-interface-iot-device-management-platform-device-connectivity-device-provisioning-attestation
+- dea:integration-interface-iot-device-management-platform-device-connectivity-device-to-cloud-telemetry
+- dea:integration-interface-iot-device-management-platform-device-connectivity-device-twin-synchronization
+- dea:integration-interface-iot-device-management-platform-device-connectivity-direct-method-invocation
+- dea:integration-interface-iot-device-management-platform-device-connectivity-edge-gateway
+- dea:integration-interface-iot-device-management-platform-device-connectivity-fleet-deployment
+- dea:integration-interface-iot-device-management-platform-device-connectivity-iot-analytics
+- dea:integration-interface-iot-device-management-platform-device-connectivity-message-routing-rules
+- dea:integration-interface-iot-device-management-platform-device-connectivity-mqtt-message-delivery
+- dea:integration-interface-iot-device-management-platform-device-connectivity-ota-firmware-update

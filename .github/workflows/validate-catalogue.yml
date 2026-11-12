@@ -37,3 +37,18 @@ jobs:
         run: |
           set -euo pipefail
           python3 scripts/check_record_posture.py
+
+      - name: "Step 6: Record taxonomy (CR-IS-CAT-04B)"
+        run: |
+          set -euo pipefail
+          python3 scripts/check_record_taxonomy.py
+
+      - name: "Step 7: Record evidence (CR-IS-CAT-04B)"
+        run: |
+          set -euo pipefail
+          python3 scripts/check_record_evidence.py
+
+      - name: "Step 8: Reference integrity (CR-IS-CAT-04B)"
+        run: |
+          set -euo pipefail
+          python3 scripts/check_reference_integrity.py

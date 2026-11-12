@@ -1,0 +1,21 @@
+system_class: human-capital-management-hcm-system
+record_count: 18
+interface_ids:
+- dea:integration-interface-human-capital-management-hcm-system-human-capital-management-absence-management
+- dea:integration-interface-human-capital-management-hcm-system-human-capital-management-benefits-administration
+- dea:integration-interface-human-capital-management-hcm-system-human-capital-management-compensation-benchmarking
+- dea:integration-interface-human-capital-management-hcm-system-human-capital-management-compensation-package
+- dea:integration-interface-human-capital-management-hcm-system-human-capital-management-employee-records-administration
+- dea:integration-interface-human-capital-management-hcm-system-human-capital-management-onboarding-offboarding-workflow
+- dea:integration-interface-human-capital-management-hcm-system-human-capital-management-organization-position-management
+- dea:integration-interface-human-capital-management-hcm-system-human-capital-management-payroll-calculation
+- dea:integration-interface-human-capital-management-hcm-system-human-capital-management-payroll-costing-interface
+- dea:integration-interface-human-capital-management-hcm-system-human-capital-management-payroll-self-service
+- dea:integration-interface-human-capital-management-hcm-system-human-capital-management-performance-goal-management
+- dea:integration-interface-human-capital-management-hcm-system-human-capital-management-security-group-provisioning
+- dea:integration-interface-human-capital-management-hcm-system-human-capital-management-skills-certification
+- dea:integration-interface-human-capital-management-hcm-system-human-capital-management-statutory-compliance-records
+- dea:integration-interface-human-capital-management-hcm-system-human-capital-management-total-rewards-statement
+- dea:integration-interface-human-capital-management-hcm-system-human-capital-management-worker-hire-business-process
+- dea:integration-interface-human-capital-management-hcm-system-human-capital-management-worker-records-administration
+- dea:integration-interface-human-capital-management-hcm-system-human-capital-management-workforce-analytics

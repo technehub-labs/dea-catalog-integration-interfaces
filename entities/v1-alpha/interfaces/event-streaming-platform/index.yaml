@@ -1,0 +1,13 @@
+system_class: event-streaming-platform
+record_count: 10
+interface_ids:
+- dea:integration-interface-event-streaming-platform-event-streaming-platform-audit-event-stream
+- dea:integration-interface-event-streaming-platform-event-streaming-platform-broker-high-availability
+- dea:integration-interface-event-streaming-platform-event-streaming-platform-cluster-balancing
+- dea:integration-interface-event-streaming-platform-event-streaming-platform-connector-framework
+- dea:integration-interface-event-streaming-platform-event-streaming-platform-consumer-group-offset
+- dea:integration-interface-event-streaming-platform-event-streaming-platform-exactly-once-transaction
+- dea:integration-interface-event-streaming-platform-event-streaming-platform-log-compaction
+- dea:integration-interface-event-streaming-platform-event-streaming-platform-schema-registry
+- dea:integration-interface-event-streaming-platform-event-streaming-platform-stream-processing
+- dea:integration-interface-event-streaming-platform-event-streaming-platform-topic-partition-produce
